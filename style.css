@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "General Sans";
+  src: url("./GeneralSans-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+/* ---------------- MINI CURSOR ---------------- */
+
+#minicircle {
+  width: 13px;
+  height: 13px;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: #fff;
+  pointer-events: none;
+  transition: transform 0.15s linear;
+}
+
+/* ---------------- TEXT ANIMATION ---------------- */
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem {
+  transform: translateY(100%);
+}
+
+/* ---------------- MAIN ---------------- */
+
+#main {
+  width: 100%;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+#nav {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* ---------------- HEADING ---------------- */
+
+#heading {
+  margin-top: 50px;
+}
+
+#heading h1 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.6;
+  margin-left: 30px;
+}
+
+#heading #secondh1 {
+  margin-left: 190px;
+}
+
+#blocktext {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#blocktext h5 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* ---------------- SMALL TEXT ---------------- */
+
+#smallheadings {
+  margin-top: 100px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#smallheadings h5 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ---------------- HERO FOOTER ---------------- */
+
+#herofooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 3%;
+  padding: 0 2vw;
+}
+
+#herofooter a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#herofooter #iconset {
+  display: flex;
+  gap: 10px;
+}
+
+#herofooter .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- PROJECT SECTION ---------------- */
+
+#second {
+  width: 100%;
+  padding-top: 180px;
+  padding-right: 10vw;
+  padding-left: 3vw;
+  color: #fff;
+}
+
+/* ---------------- PROJECT ITEM ---------------- */
+
+.elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #888;
+  padding: 3.4vw 3vw;
+  padding-right: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.elem h1 {
+  font-size: 6.7vw;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.elemlast {
+  border-bottom: 1px solid #888;
+}
+
+/* ---------------- HOVER IMAGE ---------------- */
+
+.elem img {
+  position: absolute;
+  z-index: 999;
+  height: 140%;
+  opacity: 0;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+
+#about {
+  width: 100%;
+  padding: 10vw 5vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 30vw;
+}
+
+#about img {
+  width: 200px;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+
+#textabout {
+  width: 25rem;
+}
+
+#textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+#textabout p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+#textabout a {
+  padding: 12px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* ---------------- SUBSCRIBE ---------------- */
+
+#subscribe {
+  color: white;
+  padding: 20px 30px;
+  padding-bottom: 7vw;
+}
+
+#subscribe h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+#subscribe h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+#footer {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+}
+
+#footerleft {
+  display: flex;
+  gap: 20px;
+}
+
+#footerright {
+  display: flex;
+  gap: 30px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
